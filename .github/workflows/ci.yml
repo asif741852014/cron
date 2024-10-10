@@ -1,6 +1,7 @@
 name: cron
 on:
-  push  # Run every 5 minutes
+  schedule:
+    - cron: "*/5 * * * *"  # Run every 5 minutes
 jobs:
   job1:
     runs-on: ubuntu-latest
